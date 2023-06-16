@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Introdução ao JavaScript</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/themes/prism.min.css">
+  <style>
+    /* Estilos personalizados */
+    .header-bg {
+      background-image: url("header-bg.jpg");
+      background-size: cover;
+      background-position: center;
+    }
+
+    .post-img {
+      height: 300px;
+      background-size: cover;
+      background-position: center;
+    }
+
+    .footer {
+      margin-top: auto;
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .code-container {
+      background-color: #f5f5f5;
+      border: 1px solid #ccc;
+      padding: 10px;
+      overflow-x: auto;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Cabeçalho -->
+  <header class="bg-gray-900 text-white py-8">
+    <div class="container mx-auto">
+      <h1 class="text-4xl font-bold text-center">1ºINFO - Programação Web</h1>
+      <h2 class="text-4xl font-bold text-center">Prof. Leonardo</h2>
+    </div>
+  </header>
+  <!-- Conteúdo Principal -->
+  <main class="container mx-auto py-8">
+    <!-- Post 1 -->
+
+    <h2 class="text-2xl font-bold mb-2 text-center">Introdução ao Javascript</h2>
+    <br>
+    <br>
+    <p class="text-gray-700 mb-4">
+      Olá xuxuzinhos do Tio Léo! Sejam bem-vindos à nossa primeira aula sobre do JavaScript, hoje vamos aprender os
+      conceitos
+      básicos dessa poderosa linguagem de programação e como utilizá-la para criar interatividade em suas páginas web.
+    </p>
+    <div>
+      <img src="https://thumbs.gfycat.com/MintyEdibleCony-size_restricted.gif" alt="GIF"
+        class="mx-auto w-1/4 rounded-lg shadow-lg">
+    </div>
+    <br>
+    <p class="text-gray-700 mb-4">
+      Antes de colocarmos a mão na massa, vamos ver um pouco sobre a história do nosso amigão JavaScript.
+      <br>
+      JavaScript é a <b>linguagem de programação</b> Web, em que ampla maioria dos sites e navegadores modernos
+      utilizam ele nativamente, tornando assim a linguagem de programação mais onipresente da história.
+      O nome “JavaScript” é um pouco enganoso, pois o JavaScript é completamente diferente da linguagem de programação
+      <b>Java</b> e também
+      já deixou para trás suas raízes como linguagem de <b>script</b> há muito tempo, tornando-se uma linguagem de uso
+      geral robusta e eficiente.
+      <br>
+      O JavaScript é uma linguagem <i>case sensitive</i>, ou seja, diferencia letras maiúsculas de minúsculas, isso
+      significa que palavras-chave, variáveis,
+      nomes de função e outros identificadores da linguagem sempre devem ser digitados com a composição compatível de
+      letras, Por exemplo o comando <b>while</b>, deve ser digitada como “<b>while</b>” e não como “<b>While</b>” ou “<b>WHILE</b>".
+    </p>
+      <p class="text-gray-700 mb-4">
+        <h1 class="text-4xl font-bold text-center"> Incorporando JavaScript no HTML</h1>
+        Para começar a programar em JavaScript, você pode incorporar seu código diretamente em um arquivo HTML usando a tag &lt;script&gt;
+        no final do código, antes de fechar o &lt;/body&gt;
+        
+        <div class="container mx-auto">
+          <pre>
+            <code class="language-html">
+              &lt;!DOCTYPE html&gt;
+              &lt;html&gt;
+              &lt;head&gt;
+                &lt;title&gt;Minha Primeira Página JavaScript&lt;/title&gt;
+              &lt;/head&gt;
+
+              &lt;body&gt;
+                &lt;h1&gt;Hello World in JavaScript&lt;/h1&gt;
+
+
+
+                &lt;script src=" "&gt; &lt;/script&gt;
+              &lt;/body&gt;
+              &lt;/html&gt;
+             </code>
+            </pre>
+        </div>
+        </p>
+
+        <h1 class="text-4xl font-bold text-center"> Declaração de variaveis em JavaScript</h1>
+    
+      <p class="text-gray-700 mb-4">
+      No JavaScript assim como toda linguagem de programação (Lembrando, que HTML e CSS <b>NÃO SÃO LINGUAGENS DE
+      PROGRAMAÇÃO</b>, elas são linguagens de marcação e estilização respectivamente).
+      <div>
+        <img src="https://b1694534.smushcdn.com/1694534/wp-content/uploads/2021/06/3.5-3.jpeg?lossy=1&strip=1&webp=1"
+          alt="" class="mx-auto w-1/4 rounded-lg shadow-lg">
+      </div>
+    </p>
+
+      <p class="text-gray-700 mb-4">
+      Ele possui variáveis que são usadas para armazenar valores, podemos declarar uma variável usando a palavra-chave <b>var</b>, <b>let</b> ou <b>const</b> e seguida pelo nome da variável e, opcionalmente,
+      atribuir um valor a ela. Existem vários tipos de dados em JavaScript,
+      incluindo <i>números</i>, <i>strings</i>, <i>booleanos</i> e <i>arrays</i>.
+
+      <div class="container mx-auto">
+        <pre>
+          <code class="language-javascript">
+                var nome = "Léo";
+                let idade = 29;
+                let numeros = [1, 2, 3];
+                const pi = 3.14;
+           </code>
+          </pre>
+      </div>
+    </p>
+    
+
+      <h1 class="text-4xl font-bold text-center">Operadores</h1>
+      <p class="text-gray-700 mb-4">
+        JavaScript possui diversos operadores que permitem realizar cálculos e manipulações de dados.
+
+        <div class="container mx-auto">
+          <pre>
+            <code class="language-javascript">
+              let soma = 10 + 5; // soma = 15
+              let subtracao = 10 - 5; // subtracao = 5
+              let multiplicacao = 10 * 5; // multiplicacao = 50
+              let divisao = 10 / 5; // divisao = 2
+              let modulo = 10 % 3; // modulo = 1 (resto da divisão)
+             </code>
+            </pre>
+        </div>
+    </p>
+
+    <h1 class="text-4xl font-bold text-center">Estruturas de controle</h1>
+    <p class="text-gray-700 mb-4">
+      <i>if-else</i>, <i>For</i>, <i>while</i>, <i>switch-case</i>.
+
+      <div class="container mx-auto">
+        <pre>
+          <code class="language-javascript">
+            let idade = 18;
+            if (idade >= 18) {
+              console.log("Você é maior de idade"); //console.log() é um comando que apresenta uma mensagem no console do navegador
+                                                   // Para acessar essa area, clique em inspecionar ou inspecionar elemento, 
+                                                  // e procure a aba console na janela que abriu
+            } else {
+              console.log("Você é menor de idade");
+            }
+            
+            for (let i = 0; i < 5; i++) {
+              console.log(i);
+            }
+            
+            switch (diaSemana) {
+              case "Segunda":
+                console.log("Hoje é segunda-feira");
+                break;
+              case "Terça":
+                console.log("Hoje é terça-feira");
+                break;
+              default:
+                console.log("Dia não identificado");
+            }
+           </code>
+          </pre>
+      </div>
+  </p>
+
+  <h1 class="text-4xl font-bold text-center">Function</h1>
+  <p class="text-gray-700 mb-4">
+    Uma função é um bloco de código que executa uma tarefa específica.
+    A função é definida usando a palavra-chave <b>function</b>, seguida pelo nome da função, parênteses e um bloco de código entre chaves. 
+    Por exemplo, aqui está uma função chamada HelloWorld que exibe uma mensagem de boas-vindas:
+
+    <div class="container mx-auto">
+      <pre>
+        <code class="language-javascript">
+          function HelloWorld() {
+            console.log("Hello World!");
+          }
+         </code>
+        </pre>
+    </div>
+  </p>
+
+<p class="text-gray-700 mb-4">
+  Quando você quer executar o código dentro da função, você a "chama" pelo nome, seguido por parênteses vazios, como este:
+  
+  <div class="container mx-auto">
+    <pre>
+      <code class="language-javascript">
+        HelloWorld();
+       </code>
+      </pre>
+  </div>
+</p>
+
+<h1 class="text-4xl font-bold text-center">Exibindo uma mensagem no HTML usando JavaScript</h1>
+<p class="text-gray-700 mb-4">
+  Para exibir uma mensagem no HTML usando JavaScript, podemos usar o método <b>document.write()</b> manipulando o conteúdo de um elemento HTML existente.  
+  <br>
+  Antes de utilizar o método <b>document.write()</b> , você precisa ter um elemento HTML no qual aonde você deseja exibir a mensagem. 
+  Por exemplo, exibir uma mensagem dentro de uma tag &lt;p &gt; com um id "mensagem" atribuido a ele:
+  <div class="container mx-auto">
+    <pre>
+      <code class="language-html">
+        &lt;!---DOCUMENTO HTML---&gt;
+
+        &lt;!DOCTYPE html&gt;
+        &lt;html&gt;
+        &lt;head&gt;
+          &lt;title&gt;Exibindo uma mensagem no HTML usando JavaScript&lt;/title&gt;
+        &lt;/head&gt;
+
+        &lt;body&gt;
+          &lt;p  id="mensagem"&gt;
+          
+
+          &lt;/p&gt;
+
+
+
+          &lt;script src="script.js"&gt; &lt;/script&gt;
+        &lt;/body&gt;
+        &lt;/html&gt;
+       </code>
+      </pre>
+  </div>
+</p>
+
+<p class="text-gray-700 mb-4">
+  Agora, você pode usar JavaScript para obter o elemento pelo ID e atribuir um novo conteúdo a ele.
+
+  <div class="container mx-auto">
+    <pre>
+      <code class="language-javascript">
+        //Documento script.js
+
+        let mensagemElement = document.getElementById("mensagem");
+        mensagemElement.innerHTML = "Olá, mundo!";
+       </code>
+      </pre>
+  </div>
+
+</p>
+<p class="text-gray-700 mb-4">
+  Dessa forma, o texto "Olá, mundo!" será exibido dentro do elemento &lt;p&gt; com a id "mensagem".
+</p>
+
+<h1 class="text-4xl font-bold text-center">DOM (Document Object Model)</h1>
+<p class="text-gray-700 mb-4">
+Básicamente, o DOM é o responsavel que nos permite que os scripts em JavaScript interajam com os elementos de dentro de uma página web.
+Como feito no exemplo acima, em que inserimos uma mensagem que estava no JavaScript diretametente dentro do elemento &lt;p&gt; no HTML.
+</p>
+
+<h1 class="text-4xl font-bold text-center">Atividade ❤️</h1>
+
+<div>
+  <img src="https://res.cloudinary.com/practicaldev/image/fetch/s--1mKiw7tp--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_66%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/3v4d5hak5mm163myt8jy.gif
+    " alt="" class="mx-auto w-1/2 rounded-lg shadow-lg">
+</div>
+<br>
+<h2 class="text-2xl font-bold">Atividade 1</h2>
+<p class="text-gray-700 mb-4"> 
+  Crie uma pagina simples em HTML que apresenta a seguinte mensagem em forma de pop-up:
+    <p class="text-center text-gray-700 mb-4">
+      “Programação Web melhor matéria. Fonte: Eu.”
+    </p>
+</p>  
+    <p class="text-gray-700 mb-4"> 
+     Pesquise sobre o comando <b>alert</b> para que possa apresentar essa mensagem em forma de pop-up.
+</p>
+
+<h2 class="text-2xl font-bold">Atividade 2</h2>
+<p class="text-gray-700 mb-4"> 
+  Calculadora simples. (Atividade será explicada na sala)
+   
+</p>
+   
+  </main>
+  <!-- Rodapé -->
+  <footer class="bg-gray-900 text-white py-4">
+    <div class="container mx-auto text-center">
+      <p>1ºInfo. Programção Web - 2023</p>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/prism.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/components/prism-javascript.min.js"></script>
+
+</body>
+</html>
